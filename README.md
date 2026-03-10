@@ -57,6 +57,7 @@ To simulate a cleanup without deleting anything:
 
 PowerShell
 .\cleandisk-sde.ps1 -Mode AnalyzeOnly
+
 Running the Intune Version
 This script is designed to be deployed via Intune, but can be run locally in the user context:
 
