@@ -77,7 +77,7 @@ The menu looks like this:
 
   ──────────────────────────────────────────────────────
 
-  LEVEL
+  SCOPE
 
      [3]  Low     user caches only (browsers, GPU, temp, apps)
    ● [4]  Medium  + system cache, Windows Update, CleanMgr

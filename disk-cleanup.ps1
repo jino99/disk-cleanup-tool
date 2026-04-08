@@ -168,9 +168,9 @@ function Show-Menu {
     Write-Host ""
     Write-Sep
 
-    # LEVEL
+    # SCOPE
     Write-Host ""
-    Write-Host "  LEVEL" -ForegroundColor DarkYellow
+    Write-Host "  SCOPE" -ForegroundColor DarkYellow
     Write-Host ""
     Write-Option '3' 'Low   ' '  user caches only (browsers, GPU, temp, apps)  ' ($script:Scope -eq 'Low')
     Write-Option '4' 'Medium' '  + system cache, Windows Update, CleanMgr      ' ($script:Scope -eq 'Medium')
