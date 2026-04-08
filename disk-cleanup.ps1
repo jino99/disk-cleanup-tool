@@ -59,7 +59,6 @@ param(
 # ---------------------------------------------------------------------------
 $ErrorActionPreference = 'SilentlyContinue'
 if ($Help) { Get-Help $MyInvocation.MyCommand.Path -Full; exit 0 }
-if ($SuppressConfirmation) { $ConfirmPreference = 'None' }
 
 $IsAdmin = ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)
 
@@ -258,6 +257,7 @@ function Start-InteractiveMenu {
             '8' { $script:CreateRestorePoint = !$script:CreateRestorePoint; $feedback = "System Restore Point: $(if ($script:CreateRestorePoint) {'ON'} else {'OFF'})" }
             'R' {
                 if ($script:Mode -eq 'Analyze') { return }
+                if ($SuppressConfirmation) { return }
                 Show-ConfirmScreen
                 $confirm = (Read-Host).Trim().ToUpper()
                 if ($confirm -eq 'Y') { return }
