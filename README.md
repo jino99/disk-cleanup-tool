@@ -36,8 +36,8 @@ Two PowerShell scripts for Windows endpoint maintenance and disk space recovery,
 
 **1. Clone or download the repository:**
 ```powershell
-git clone https://github.com/jino99/disk-cleanup-tool.git
-cd disk-cleanup-tool
+git clone https://github.com/jino99/win-cleanup.git
+cd win-cleanup
 ```
 
 **2. Unblock scripts if downloaded from the internet:**
