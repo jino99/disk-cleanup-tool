@@ -1,0 +1,13 @@
+*.log
+/Logs/
+
+.vscode/
+.history/
+*.swp
+
+[Dd]esktop.ini
+Thumbs.db
+$RECYCLE.BIN/
+
+*.tmp
+*.bak
